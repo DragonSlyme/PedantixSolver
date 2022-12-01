@@ -14,7 +14,7 @@ pip install requests tqdm google
 Pour lancer le programme, il suffit de lancer la commande suivante dans un terminal:
 python pedantixSolver.py
 
-Réalisé par @DragonSlymeee
+Réalisé par @DragonSlyme
 """
 
 import requests
@@ -79,8 +79,9 @@ def get_wikipedia_url(query):
 # Programme principal
 def main():
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
-    print("|            Pédantix Cracker             |")
-    print("|           by @DragonSlymeee             |")
+    print("|            Pédantix Solver              |")
+    print("|            by @DragonSlyme              |")
+    print("|             Version 1.0.1               |")
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n")
 
     dictionnary = open("dictionnary.txt", "r").readlines()
