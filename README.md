@@ -1,5 +1,5 @@
 # PedantixSolver
-Programme __simple__ mais __efficace__ qui vous permet de trouver la page _pédantix_ cachée du jour. 
+Programme __simple__ mais __efficace__ qui vous permez de trouver la page _pédantix_ cachée du jour. 
 
 ---
 ## Dépendances:
