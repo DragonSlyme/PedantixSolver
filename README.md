@@ -22,12 +22,14 @@ Et enfin, il est __absolument__ nécessaire d'avoir le fichier "dictionnary.txt"
 ## Utilisation:
 Lancez simplement la commande suivante __après__ avoir installé les dépendances:
 ```
-python pedantixSolver.py
+python pedantixSolver.py [nb](option)
 ```
 ou alors:
 ```
-python3 pedantixSolver.py
+python3 pedantixSolver.py [nb](option)
 ```
+__nb__ est optionnel et correspond au nombre de lettre du __premier mot__ de la page wikipédia accessible en cliquant sur la case noir, cela peut permettre de grandement améliorer les résultats.
+
 ---
 ## Performances:
 

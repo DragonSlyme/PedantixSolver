@@ -18,6 +18,7 @@ Réalisé par @DragonSlyme
 """
 
 import requests
+import sys
 from googlesearch import search
 from urllib.parse import unquote
 from tqdm import tqdm
@@ -63,17 +64,27 @@ def convert_list_to_search(list_words):
 # Fonction pour récupérer les urls des pages wikipédia et n'en garder que la fin
 def get_wikipedia_url(query):
     list_possible_words = []
+    as_argument = len(sys.argv) > 1
     ban_extension = [".pdf", ".html", ".fr", "/", ".htm", "#"]
     nb_search = 10
     nb_max_search = 3
     for url in search(query, stop=nb_search, pause=0.1):
         clean_word = unquote(url)[30:].replace("_", " ")
-        if nb_max_search > 0:
-            if all([extension not in clean_word for extension in ban_extension]):
-                list_possible_words.append(clean_word)
-                nb_max_search -= 1
+        if as_argument:
+            if nb_max_search > 0 and nb_search > 0:
+                if all([extension not in clean_word for extension in ban_extension]) and int(sys.argv[1]) == len(clean_word.split(" ")[0]):
+                    list_possible_words.append(clean_word)
+                    nb_max_search -= 1
+            else:
+                break
         else:
-            break
+            if nb_max_search > 0 and nb_search > 0:
+                if all([extension not in clean_word for extension in ban_extension]):
+                    list_possible_words.append(clean_word)
+                    nb_max_search -= 1
+            else:
+                break
+        nb_search -= 1
     return list_possible_words
 
 # Programme principal
@@ -81,7 +92,7 @@ def main():
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
     print("|            Pédantix Solver              |")
     print("|            by @DragonSlyme              |")
-    print("|             Version 1.0.1               |")
+    print("|             Version 1.1.0               |")
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n")
 
     dictionnary = open("dictionnary.txt", "r").readlines()
