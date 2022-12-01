@@ -31,7 +31,7 @@ python3 pedantixSolver.py
 ---
 ## Performances:
 
-En __moyenne__ ce programme finit ces recherches entre __25 et 50 secondes__ (selon la configuration de votre pc) 
+En __moyenne__ ce programme finit ces recherches entre __10 et 40 secondes__ (selon la configuration de votre pc) 
 
 `PS: Par malchance le bot peut ne pas vous renvoyer la bonne réponse`
 
