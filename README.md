@@ -40,3 +40,5 @@ En __moyenne__ ce programme finit ces recherches entre __10 et 40 secondes__ (se
 À vous de modifier le dictionnaire pour qu'il soit encore plus performant (celui-ci est d'ailleurs en partie basé sur le travail de [AnthonyJungmann](https://github.com/AnthonyJungmann/pedantix_mots/blob/master/mots_sans_stopwords.txt))
 
 Il peut largement être amélioré, c'est pourquoi je suis ouvert à toute nouvelle proposition de code.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F3GQWPN)
