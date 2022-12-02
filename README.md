@@ -33,7 +33,11 @@ __nb__ est optionnel et correspond au nombre de lettre du __premier mot__ de la 
 ---
 ## Performances:
 
-En __moyenne__ ce programme finit ces recherches entre __10 et 40 secondes__ (selon la configuration de votre pc) 
+En __moyenne__ ce programme finit ces recherches entre __10 et 40 secondes__ (selon votre connexion internet par exemple)
+
+![Imagetop2](https://i.imgur.com/ZXFRIN7.png)
+
+![ImageTerminal](https://i.imgur.com/adu9UfP.png)
 
 `PS: Par malchance le bot peut ne pas vous renvoyer la bonne réponse`
 
